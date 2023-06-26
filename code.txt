@@ -1,0 +1,53 @@
+    <script>
+      //cat-api//
+      
+      // Selecione o botão
+      const generateButton = document.getElementById('generate-button');
+
+      // Função para gerar a imagem
+      function generateImage() {
+        const url = 'https://api.thecatapi.com/v1/images/search';
+
+        fetch(url)
+          .then((response) => {
+            return response.json();
+          })
+          .then((data) => {
+            const imageUrl = data[0].url;
+            document.getElementById('image-container-cat').style.backgroundImage = `url(${imageUrl})`;
+          });
+      }
+
+      // Adicione um manipulador de eventos para o clique no botão
+      generateButton.addEventListener('click', generateImage);
+
+      // Chame a função para exibir uma imagem inicial
+      generateImage();
+    </script>
+
+    <script>
+      //dog-api//
+      
+      // Selecione o botão
+      const generateButtonDog = document.getElementById('generate-button-dog');
+
+      // Função para gerar a imagem
+      function generateImageDog() {
+        const url = 'https://api.thedogapi.com/v1/images/search';
+
+        fetch(url)
+          .then((response) => {
+            return response.json();
+          })
+          .then((data) => {
+            const imageUrlDog = data[0].url;
+            document.getElementById('image-container-dog').style.backgroundImage = `url(${imageUrlDog})`;
+          });
+      }
+
+      // Adicione um manipulador de eventos para o clique no botão
+      generateButtonDog.addEventListener('click', generateImageDog);
+
+      // Chame a função para exibir uma imagem inicial
+      generateImageDog();
+    </script>

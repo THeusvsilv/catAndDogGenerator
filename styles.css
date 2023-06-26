@@ -1,0 +1,71 @@
+body {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+
+.catdog {
+  width: 600px;
+  height: 600px;
+  border-radius: 20px;
+  margin: auto;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.botao {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#generate-button {
+  background-color: #00eeff;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin: 20px;
+}
+
+#generate-button:hover {
+  background-color: #f899ff;
+}
+
+#generate-button-dog {
+  background-color: #00eeff;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+#generate-button-dog:hover {
+  background-color: #f899ff;
+}
+
+
+@media (max-width: 767px) {
+  .cat,
+  .dog {
+    width: 100%;
+  }
+}
+
+.container{
+  margin-bottom: 20px;
+  margin-top: 20px
+}
