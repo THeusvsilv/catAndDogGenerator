@@ -50,4 +50,4 @@
 
       // Chame a função para exibir uma imagem inicial
       generateImageDog();
-    </script>
+  </script>

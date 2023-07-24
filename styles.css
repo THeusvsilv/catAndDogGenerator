@@ -69,3 +69,25 @@ body {
   margin-bottom: 20px;
   margin-top: 20px
 }
+
+
+
+#download-section {
+  background-color: #e6f1fb;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #ff9bcf;
+  font-size: 24px;
+}
+
+a {
+  display: block;
+  color: #00a8e8;
+  font-size: 16px;
+  margin-top: 10px;
+}
