@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Cat and Dog</title>
-    <link rel="icon" id="site-icon" href="primeiro-icone.png" type="image/png">
+    <link rel="icon" href="primeiro-icone.png" id="favicon">
 
     <link rel="stylesheet" type="text/css" href="styles.css">
    
@@ -26,6 +26,19 @@
 
     </div> 
    <script src="script.js"></script>
+
+  <script>
+    // Função para alternar o ícone do site
+    function changeFavicon() {
+      var currentFavicon = document.getElementById('favicon');
+      var newFavicon = currentFavicon.href.includes('primeiro-icone.png') ? 'segundo-icone.png' : 'primeiro-icone.png';
+      currentFavicon.href = newFavicon;
+    }
+
+    // Chama a função inicialmente e a cada 5 segundos
+    setInterval(changeFavicon, 2000);
+  </script>
+
 
   </body>
 </html>
